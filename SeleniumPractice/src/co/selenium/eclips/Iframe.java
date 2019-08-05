@@ -19,6 +19,7 @@ public class Iframe {
 		WebElement source =  driver.findElement(By.id("draggable"));
 		WebElement target =  driver.findElement(By.id("droppable"));
 		a.dragAndDrop(source, target).build().perform();
+		driver.switchTo().defaultContent();
 		
 
 	}
